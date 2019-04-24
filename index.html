@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang=sv>
+<head>
+<meta charset="utf-8">
+<title>Tommy</title>
+<link href="./main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <h1>Hjälp att välja vad man ska laga för mat...</h1>
+  <div class="inputSection">
+    <div class="inputs">
+      <input placeholder="Något"></input>
+    </div>
+    <button class="addOption">Lägg till</button>
+  </div>
+  <div class="resultSection"></div>
+  <button class="submit">Kör!</button>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script>
+  $(function(){
+    $('.resultSection').hide()
+    var add_option = function () {
+      $('.inputs').append('<input></input>')
+    }
+    $('.addOption').click(add_option)
+    var options = []
+    var submit = function() {
+      $('.inputSection').hide()
+      $('.resultSection').css('display','flex')
+      $('input').each(function() {
+      options.push($(this).val())
+      })
+      var winner = options[Math.floor(Math.random() * options.length)]
+      console.log(winner)
+      $('.resultSection').text(winner)
+    }
+    $('.submit').click(submit)
+  })
+</script>
+</body>
+
+<body>
+<img src="https://spritmuseum.se/wp-content/uploads/2017/03/spritlandet-sverige-skeppetpannan-fatlagring-pa-spritmuseum-640x360.jpg" class="attachment-medium size-medium wp-post-image" alt="" srcset="https://spritmuseum.se/wp-content/uploads/2017/03/spritlandet-sverige-skeppetpannan-fatlagring-pa-spritmuseum-640x360.jpg 640w, https://spritmuseum.se/wp-content/uploads/2017/03/spritlandet-sverige-skeppetpannan-fatlagring-pa-spritmuseum-320x180.jpg 320w, https://spritmuseum.se/wp-content/uploads/2017/03/spritlandet-sverige-skeppetpannan-fatlagring-pa-spritmuseum-768x432.jpg 768w, https://spritmuseum.se/wp-content/uploads/2017/03/spritlandet-sverige-skeppetpannan-fatlagring-pa-spritmuseum-800x450.jpg 800w" sizes="(max-width: 640px) 100vw, 640px">
+
+<h1 style="background-color:lightblue;color:white;">Grattis Pappa!</h1>
+<h1>Nu när du fyller år tänkte jag att du skulle få en inbjudan till att gå på antingen:</h1>
+<h2>Spritmuseumet i Stockholm</h2>
+<img class="irc_mi" src="http://www.stockholm.se/PageFiles/205963/Djurg%C3%A5rden%20fotograf%20Henrik%20Trygg.jpg" onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)" alt="Bildresultat för djurgården stockholm" width="304" height="203" style="margin-top: 75px;" data-iml="1556111223604">
+<img class="irc_mi" src="https://scontent-frx5-1.cdninstagram.com/vp/69544268819bb20baa05cbacf1a62a07/5D06CFD2/t51.2885-15/e35/51568369_1192353787601401_163244605971366101_n.jpg?_nc_ht=scontent-frx5-1.cdninstagram.com&amp;se=7&amp;ig_cache_key=MTk4NzEzNzk1ODc2ODkyMzI4OQ%3D%3D.2" onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)" alt="Bildresultat för Armémuseumet stockholm" width="304" height="304" style="margin-top: 25px;" data-iml="1556111082208">
+<img class="irc_mi" src="http://3.bp.blogspot.com/-nozXjDZ-Pfo/TlXEa2BqUlI/AAAAAAAACbU/_5S2Yc9bAHw/s640/dinneronthebalcony.jpg" onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)" alt="Bildresultat för dinner balcony" width="304" height="202" style="margin-top: 76px;" data-iml="1556111180005"><h3>Om du har vägarna förbi Stockholm så kan vi besöka Spritmuseeumet samt/eller Armémuseeumet. Sedan bjuder jag på middag i Sumpan.</h3>
+<h1>eller varför inte</h1>
+<img class="irc_mi" src="https://www.stugknuten.com/img/926a07d0-b810-11e8-b36c-e1b282df04ad.jpeg" onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)" alt="Bildresultat för hälsingland Järvsö träslott" width="304" height="154" style="margin-top: 100px;" data-iml="1556111514679">
+<h2>Hälsinglandmuseumet i Hälsingland</h2>
+<img class="irc_mi" src="https://images.eniro.com/covers/halsinglands-museum-14282623-1522838012139?name=large" onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)" alt="Bildresultat för museum hudiksvall" width="304" height="122" style="margin-top: 116px;" data-iml="1556110995498">
+
+<h3>Om du inte har vägarna förbi Stockholm kan vi gå på Hälsinglandmuseumet i Hudiksvall i sommar och käka något gott på Creperiet i Järvsö.</h3>
+<img class="irc_mi" src="https://static1.squarespace.com/static/56e023c0555986dd8cc9e84b/t/57750c52ff7c50e8f4842a87/1467288662798/pannkakor%2C+pancakes%2C+crepes%2C+galetter%2C+J%C3%A4rvs%C3%B6+Creperie" onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)" alt="Bildresultat för järvsö creperi" width="235" height="353" style="margin-top: 0px;" data-iml="1556111305757">
+<img class="irc_mi" src="https://files.ellematovin.se/uploads/sites/14/2015/07/creperiet9-700x933.jpg" onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)" alt="Relaterad bild" width="265" height="353" style="margin-top: 0px;" data-iml="1556111343369">
+<h3> Huvudsaken är att man kan ha en mysig dag och att det blir av</h3>
+
+
+
+<img class="irc_mi" src="https://www.jokejive.com/images/jokejive/82/827b1a0dc87c68ce2566cac079b0abbb.jpeg" onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)" width="255" height="353" style="margin-top: 0px;" data-iml="1556113523479" alt="Relaterad bild">
+<img class="irc_mi" src="http://www.bestfunnyjokes4u.com/wp-content/uploads/2013/06/funny-joke-of-the-day.jpg" onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)" width="260" height="353" style="margin-top: 0px;" data-iml="1556113597642" alt="Relaterad bild">
+
+<br>
+<em>Till far</em>
+<em>Jag är dig evigt tacksam<br>
+för livet som jag fått<br>
+och för att du funnits där<br>
+i stort såväl som smått.<br>
+<br>
+En förebild du varit<br>
+sen jag var en liten tjej<br>
+och mycket här i livet<br>
+har jag lärt mig utav dig.<br>
+<br>
+All kärlek och din omsorg<br>
+har stärkt mig i mitt jag.<br>
+Så tack för allt du gett mig<br>
+och ger mig än idag.</em>
+
+
+
+<img class="irc_mi" src="http://www.hallmark.com/on/demandware.static/-/Sites-hallmark-master/default/dwf8d9e810/images/finished-goods/golf-humor-funny-fathers-day-card-root-349zfd1481_1470_1.jpg" onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)" width="242" height="353" style="margin-top: 0px;" data-iml="1556113775723" alt="Bildresultat för cartoon dad funny">
+  </body
+</html>
